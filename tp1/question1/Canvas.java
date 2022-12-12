@@ -208,5 +208,62 @@ public class Canvas {
             graphic.fill(shape);
         }
     }
+    //question 1
+//instances for shape objects 
+Circle myCircle = new Circle();
+Square mySquare = new Square();
+Triangle myTriangle = new Triangle();
 
+//calling methods for circle 
+public void cirlceMakeVisible(){
+    myCircle.makeVisible();
 }
+
+public void circleRight(){
+    myCircle.moveRight();
+}
+
+public void circleLeft(){
+    myCircle.moveLeft(); 
+}
+
+public void cirlceColor(String newColor){
+    myCircle.changeColor(newColor);
+}
+
+//calling methods for square
+public void squareMakeVisible(){
+    mySquare.makeVisible();
+}
+
+public void squareRight(){
+    mySquare.moveRight();
+}
+
+public void squareLeft(){
+    mySquare.moveLeft(); 
+}
+
+public void squareColor(String newColor){
+    mySquare.changeColor(newColor);
+}
+//calling methods for triangle
+
+public void triangleMakeVisible(){
+    myTriangle.makeVisible();
+}
+
+public void triangleRight(){
+    myTriangle.moveRight();
+}
+
+public void triangleLeft(){
+    myTriangle.moveLeft(); 
+}
+
+public void triangleColor(String newColor){
+    myTriangle.changeColor(newColor);
+}
+
+
+ }

@@ -20,12 +20,14 @@ public class Picture {
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Circle sun2;
 
     /**
      * Constructor for objects of class Picture
      */
     public Picture() {
         // nothing to do... instance variables are automatically set to null
+        
     }
 
     /**
@@ -55,6 +57,14 @@ public class Picture {
         sun.moveVertical(-10);
         sun.changeSize(60);
         sun.makeVisible();
+        
+        sun2 = new Circle();
+        sun2.changeColor("yellow");
+        sun.moveHorizontal(180);
+        sun.moveVertical(-10);
+        sun2.changeSize(60);
+        sun2.makeVisible();
+        
     }
 
     /**
@@ -79,8 +89,15 @@ public class Picture {
             wall.changeColor("red");
             window.changeColor("black");
             roof.changeColor("green");
-            sun.changeColor("yellow");
+            //changing sun color to blue
+            sun.changeColor("blue");
         }
     }
+    //sun sleep method
+    public void sunSleep(){
+        sun2.slowMoveVertical(-100);
+    }
 
+    Picture pic = new Picture();
 }
+
